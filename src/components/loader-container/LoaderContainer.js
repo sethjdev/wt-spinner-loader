@@ -4,6 +4,7 @@ import Button from "../button/Button";
 import useInterval from "../../hooks/useInterval";
 import DocumentTitle from "../../components/document-title/DocumentTitle";
 import renderStatusText from "../../helpers/renderStatusText";
+import Spinner from "../spinner/Spinner";
 
 function LoaderContainer() {
   const [started, setStarted] = useState(false);
@@ -25,7 +26,9 @@ function LoaderContainer() {
     <>
       <DocumentTitle title={renderStatusText(started, progress, complete)} />
       <div className={styles.wrapper}>
-        <div className={styles.loaderWrapper}></div>
+        <div className={styles.loaderWrapper}>
+          <Spinner started={started} progress={progress} complete={complete} />
+        </div>
         <div className={styles.controlsWrapper}>
           <Button
             label={"Start"}
