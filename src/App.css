@@ -5,3 +5,9 @@
   justify-content: center;
   align-items: center;
 }
+
+p,
+span,
+button {
+  font-family: "Roboto", sans-serif;
+}
