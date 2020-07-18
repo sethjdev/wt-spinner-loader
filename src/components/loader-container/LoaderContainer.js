@@ -3,7 +3,7 @@ import styles from "./LoaderContainer.module.css";
 import Button from "../button/Button";
 import useInterval from "../../hooks/useInterval";
 import DocumentTitle from "../../components/document-title/DocumentTitle";
-import consts from "../../consts";
+import renderStatusText from "../../helpers/renderStatusText";
 
 function LoaderContainer() {
   const [started, setStarted] = useState(false);
@@ -23,7 +23,7 @@ function LoaderContainer() {
 
   return (
     <>
-      <DocumentTitle title={renderDocumentTitle(started, progress, complete)} />
+      <DocumentTitle title={renderStatusText(started, progress, complete)} />
       <div className={styles.wrapper}>
         <div className={styles.loaderWrapper}></div>
         <div className={styles.controlsWrapper}>
@@ -46,13 +46,6 @@ function LoaderContainer() {
       </div>
     </>
   );
-}
-
-function renderDocumentTitle(started, progress, complete) {
-  if (complete) return consts.UPLOAD_COMPLETE;
-  if (started) return consts.UPLOADING;
-  if (progress < 100 && progress > 0) return consts.RESUME_UPLOAD;
-  return consts.READY_TO_UPLOAD;
 }
 
 export default LoaderContainer;
