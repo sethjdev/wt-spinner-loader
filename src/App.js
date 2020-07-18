@@ -1,7 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
+import LoaderCard from "./components/loader-card/LoaderCard";
+
 import "./App.css";
 
 export default (props) => {
-  return <div className="app-wrapper"></div>;
+  return (
+    <div className="app-wrapper">
+      <LoaderCard />
+    </div>
+  );
 };
