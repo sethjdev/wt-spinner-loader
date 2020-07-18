@@ -2,9 +2,14 @@ import React from "react";
 import style from "./Button.module.css";
 import PropTypes from "prop-types";
 
-function Button({ label, onClick }) {
+function Button({ label, onClick, disabled }) {
   return (
-    <button className={style.wrapper} onClick={onClick}>
+    <button
+      className={[style.wrapper, disabled ? style.disabled : null]}
+      onClick={onClick}
+      role={"button"}
+      disabled={disabled}
+    >
       {label}
     </button>
   );

@@ -1,2 +1,7 @@
 .wrapper {
+  display: inline-block;
+}
+
+.disabled {
+  opacity: 0.5;
 }

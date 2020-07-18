@@ -1,12 +1,12 @@
 import React from "react";
-import LoaderCard from "./components/loader-card/LoaderCard";
+import LoaderContainer from "./components/loader-container/LoaderContainer";
 
 import "./App.css";
 
 export default (props) => {
   return (
     <div className="app-wrapper">
-      <LoaderCard />
+      <LoaderContainer />
     </div>
   );
 };
