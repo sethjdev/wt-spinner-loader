@@ -36,6 +36,6 @@ Returns humanized text about the status of the upload
 
 ## Hooks
 
-#### Use Interval Hook
+#### useInterval Hook
 `/hooks/useInterval`\
 A custom hook that makes using setInterval easier with functional components
