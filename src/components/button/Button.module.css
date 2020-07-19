@@ -1,14 +1,10 @@
 .wrapper {
   display: inline-block;
   border: none;
-  border-top: 1px solid #525252;
-  border-bottom: 1px solid #525252;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  background: #525252;
+  background: #07a0fa;
   color: #ffffff;
-  font-family: sans-serif;
-  font-size: 1rem;
   cursor: pointer;
   text-align: center;
   -webkit-appearance: none;
@@ -19,18 +15,11 @@
 }
 
 .wrapper:nth-child(1) {
-  border-left: 1px solid #525252;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 }
 
-.wrapper:nth-child(2) {
-  border-right: 1px solid #525252;
-  border-left: 1px solid #525252;
-}
-
 .wrapper:nth-child(3) {
-  border-right: 1px solid #525252;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
 }
@@ -41,5 +30,5 @@
 
 .disabled {
   color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(0,0,0,0.3)
+  background-color: rgba(0, 0, 0, 0.3);
 }
