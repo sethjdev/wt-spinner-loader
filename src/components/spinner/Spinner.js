@@ -49,8 +49,10 @@ function Spinner(props) {
         />
       </svg>
       <div className={styles.percentWrapper}>
-        <span className={styles.percentText}>{progress}</span>
-        <span className={styles.percentUnit}>%</span>
+        <div className={styles.percentInnerWrapper}>
+          <span className={styles.percentText}>{progress}</span>
+          <span className={styles.percentUnit}>%</span>
+        </div>
       </div>
     </div>
   );
@@ -59,8 +61,8 @@ function Spinner(props) {
 Spinner.getInitialProps = {
   started: false,
   progress: 0,
-  complete: false
-}
+  complete: false,
+};
 
 Spinner.propTypes = {
   started: propTypes.bool,

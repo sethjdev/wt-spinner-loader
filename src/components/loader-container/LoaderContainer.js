@@ -7,18 +7,20 @@ import renderStatusText from "../../helpers/renderStatusText";
 import Spinner from "../spinner/Spinner";
 
 function LoaderContainer() {
+  
   const [started, setStarted] = useState(false);
   const [progress, setProgress] = useState(0);
 
-  useInterval(() => {
-    if (started) {
+  useInterval(
+    () => {
       if (progress < 100) {
         setProgress(progress + 1);
       } else {
         setStarted(false);
       }
-    }
-  }, 100);
+    },
+    started ? 100 : null
+  );
 
   const complete = !started && progress === 100;
 

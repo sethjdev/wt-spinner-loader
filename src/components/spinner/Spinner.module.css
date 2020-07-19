@@ -20,7 +20,7 @@
 circle {
   fill: transparent;
   stroke: #07a0fa;
-  stroke-width: 10;
+  stroke-width: 5;
   stroke-linecap: round;
   transform-origin: 50% 50%;
   transition: stroke-dashoffset 0.1s linear;
@@ -30,7 +30,7 @@ circle {
 .circleTrack {
   fill: transparent;
   stroke: #ededed;
-  stroke-width: 10;
+  stroke-width: 5;
   transform-origin: 50% 50%;
 }
 
@@ -41,25 +41,30 @@ circle {
   left: 0;
   right: 0;
   margin: auto;
-  height: 40px;
-  width: 40px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.percentInnerWrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
 .percentText {
-  font-size: 3em;
+  font-size: 3.5rem;
   font-weight: 500;
   color: #525252;
 }
 
 .percentUnit {
-  font-size: 1.5em;
+  font-size: 1.75em;
   top: 5px;
   position: relative;
   font-weight: 500;
-  color: #525252;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 @keyframes spin {

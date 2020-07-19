@@ -6,9 +6,3 @@
   align-items: center;
   background-color: rgba(0,0,0,0.01);
 }
-
-p,
-span,
-button {
-  font-family: "Roboto", sans-serif;
-}
