@@ -70,7 +70,7 @@ function Spinner(props) {
   );
 }
 
-Spinner.getInitialProps = {
+Spinner.defaultProps = {
   started: false,
   progress: 0,
   complete: false,
