@@ -5,9 +5,8 @@ import PropTypes from "prop-types";
 function Button({ label, onClick, disabled }) {
   return (
     <button
-      className={[style.wrapper, disabled ? style.disabled : null]}
+      className={`${style.wrapper} ${disabled ? style.disabled : ""}`}
       onClick={onClick}
-      role={"button"}
       disabled={disabled}
     >
       {label}
