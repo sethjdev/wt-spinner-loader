@@ -4,5 +4,17 @@
   width: 100vw;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: rgba(0,0,0,0.01);
+}
+
+.app-wrapper .copyright {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.app-wrapper .copyright a {
+  text-decoration: none;
+  color: #07a0fa;
 }

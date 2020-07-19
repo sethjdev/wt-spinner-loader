@@ -20,6 +20,8 @@ function Spinner(props) {
 
   return (
     <div className={styles.wrapper}>
+      
+      {/* SPINNER CIRCLES */}
       <svg
         className={styles.spinAnim}
         viewBox="0 0 100 100"
@@ -48,6 +50,8 @@ function Spinner(props) {
           className={styles.circleTrack}
         />
       </svg>
+
+      {/* STATUS TEXT */}
       <div className={`${styles.innerCircleWrapper}`}>
         <div className={`${styles.percentInnerWrapper} ${complete ? styles.complete : ""}`}>
           <span className={styles.percentText}>{progress}</span>
@@ -57,6 +61,7 @@ function Spinner(props) {
           <p>UPLOAD<br />COMPLETE!</p>
         </div>
       </div>
+
     </div>
   );
 }
