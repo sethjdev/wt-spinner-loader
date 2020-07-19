@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "./LoaderContainer.module.css";
 import Button from "../button/Button";
 import useInterval from "../../hooks/useInterval";
@@ -20,7 +20,7 @@ function LoaderContainer() {
     }
   }, 100);
 
-  const complete = !started && progress == 100;
+  const complete = !started && progress === 100;
 
   return (
     <>
@@ -43,7 +43,7 @@ function LoaderContainer() {
           <Button
             label={"Reset"}
             onClick={() => setProgress(0)}
-            disabled={progress == 0}
+            disabled={progress === 0}
           />
         </div>
       </div>

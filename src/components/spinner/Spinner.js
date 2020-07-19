@@ -56,6 +56,12 @@ function Spinner(props) {
   );
 }
 
+Spinner.getInitialProps = {
+  started: false,
+  progress: 0,
+  complete: false
+}
+
 Spinner.propTypes = {
   started: propTypes.bool,
   progress: propTypes.number,
