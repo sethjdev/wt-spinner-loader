@@ -1,6 +1,6 @@
 # WeTransfer Technical Assessment
 ### By Seth Johnson &copy; 2020
-#### Project bootstraped with [create-react-app](https://github.com/facebook/create-react-app)
+#### Project bootstrapped with [create-react-app](https://github.com/facebook/create-react-app)
 
 ## Components
 
@@ -18,7 +18,7 @@ Wraps reusable spinner component and control buttons and is responsible for prog
 
 #### Spinner Component
 `/components/spinner`\
-Shows spinner and progress circles, percent completed and upload compeleted labels
+Shows spinner and progress circles, percent completed and upload completed labels
 
 #### Document Title
 `/components/document-title`\
