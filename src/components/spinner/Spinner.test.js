@@ -35,6 +35,5 @@ describe("Spinner", () => {
     );
 
     expect(screen.getByText("UPLOAD COMPLETE!")).toBeInTheDocument();
-
   });
 });
