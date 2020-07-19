@@ -48,10 +48,13 @@ function Spinner(props) {
           className={styles.circleTrack}
         />
       </svg>
-      <div className={styles.percentWrapper}>
-        <div className={styles.percentInnerWrapper}>
+      <div className={`${styles.innerCircleWrapper}`}>
+        <div className={`${styles.percentInnerWrapper} ${complete ? styles.complete : ""}`}>
           <span className={styles.percentText}>{progress}</span>
           <span className={styles.percentUnit}>%</span>
+        </div>
+        <div className={`${styles.completeWrapper} ${complete ? styles.complete : ""}`}>
+          <p>UPLOAD<br />COMPLETE!</p>
         </div>
       </div>
     </div>

@@ -17,6 +17,15 @@
   animation-play-state: paused;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 circle {
   fill: transparent;
   stroke: #07a0fa;
@@ -34,7 +43,7 @@ circle {
   transform-origin: 50% 50%;
 }
 
-.percentWrapper {
+.innerCircleWrapper {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -51,6 +60,22 @@ circle {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  position: absolute;
+}
+
+.percentInnerWrapper.complete {
+  animation: fadeOut 0.5s cubic-bezier(0.61, -0.62, 0.34, 1.54) forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
 }
 
 .percentText {
@@ -67,11 +92,31 @@ circle {
   color: rgba(0, 0, 0, 0.3);
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+.completeWrapper {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completeWrapper p {
+  color: #07a0fa;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.completeWrapper.complete {
+  animation: completeAnim 0.5s cubic-bezier(0.61, -0.62, 0.34, 1.54) forwards;
+}
+
+@keyframes completeAnim {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
