@@ -11,7 +11,8 @@
   -moz-appearance: none;
   font-size: 0.8rem;
   text-transform: uppercase;
-  font-weight: bold;
+  margin: 0;
+  font-weight: 500;
 }
 
 .wrapper:first-child {
