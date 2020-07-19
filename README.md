@@ -1,4 +1,6 @@
 # WeTransfer Technical Assessment
+#### Live App:
+[http://sethjohnson.co/wt-spinner-loader/](http://sethjohnson.co/wt-spinner-loader/)
 ### By Seth Johnson &copy; 2020
 #### Project bootstrapped with [create-react-app](https://github.com/facebook/create-react-app)
 
