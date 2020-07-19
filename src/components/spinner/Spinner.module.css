@@ -93,10 +93,12 @@ circle {
 }
 
 .completeWrapper {
+  width: 50%;
   opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: completeAnim 0.5s cubic-bezier(0.61, -0.62, 0.34, 1.54) forwards;
 }
 
 .completeWrapper p {
@@ -104,10 +106,6 @@ circle {
   font-weight: bold;
   text-align: center;
   font-size: 1.3em;
-}
-
-.completeWrapper.complete {
-  animation: completeAnim 0.5s cubic-bezier(0.61, -0.62, 0.34, 1.54) forwards;
 }
 
 @keyframes completeAnim {

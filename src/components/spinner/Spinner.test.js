@@ -19,4 +19,22 @@ describe("Spinner", () => {
     );
     expect(screen.getByText(`${state.progress}`)).toBeInTheDocument();
   });
+  test("renders Spinner component completed state", () => {
+    const state = {
+      started: false,
+      progress: 100,
+      complete: true,
+    };
+
+    render(
+      <Spinner
+        started={state.started}
+        progress={state.progress}
+        complete={state.complete}
+      />
+    );
+
+    expect(screen.getByText("UPLOAD COMPLETE!")).toBeInTheDocument();
+
+  });
 });

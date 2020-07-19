@@ -13,6 +13,7 @@ function Button({ label, onClick, disabled }) {
 Button.propTypes = {
   onClick: PropTypes.func,
   label: PropTypes.string,
+  disabled: PropTypes.bool
 };
 
 export default Button;
