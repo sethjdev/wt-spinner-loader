@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8fc89dc3ab46ec08e18a664fea6d3afe",
+    "revision": "47194a810f618e8c1eb2ca69e0c83f0d",
     "url": "/wt-spinner-loader/index.html"
   },
   {
