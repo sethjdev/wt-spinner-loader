@@ -6,8 +6,9 @@ function Spinner(props) {
   const { started, progress, complete } = props;
   const spinSvgRef = useRef(null);
   const circleWidth = 50;
+  const endCapPadding = 30;
 
-  const strokeDasharray = Math.round(Math.PI * (2 * circleWidth) - 30);
+  const strokeDasharray = Math.round(Math.PI * (2 * circleWidth) - endCapPadding);
   const strokeDashoffset = Math.round(((100 - progress) / 100) * strokeDasharray);
 
   if (!!spinSvgRef.current) {
