@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 import styles from "./Spinner.module.css";
 
 function Spinner(props) {
@@ -52,11 +52,7 @@ function Spinner(props) {
 
       {/* STATUS TEXT */}
       <div className={`${styles.innerCircleWrapper}`}>
-        <div
-          className={`${styles.percentInnerWrapper} ${
-            complete ? styles.complete : ""
-          }`}
-        >
+        <div className={`${styles.percentInnerWrapper} ${complete ? styles.complete : ""}`}>
           <span className={styles.percentText}>{progress}</span>
           <span className={styles.percentUnit}>%</span>
         </div>
@@ -77,9 +73,9 @@ Spinner.defaultProps = {
 };
 
 Spinner.propTypes = {
-  started: propTypes.bool,
-  progress: propTypes.number,
-  complete: propTypes.bool,
+  started: PropTypes.bool,
+  progress: PropTypes.number,
+  complete: PropTypes.bool,
 };
 
 export default Spinner;

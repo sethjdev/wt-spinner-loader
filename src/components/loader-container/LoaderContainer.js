@@ -19,6 +19,7 @@ function LoaderContainer() {
         setStarted(false);
       }
     },
+    // passing null for the delay value pauses interval
     started ? 100 : null
   );
 
@@ -29,7 +30,11 @@ function LoaderContainer() {
       <DocumentTitle title={renderStatusText(started, progress, complete)} />
       <div className={styles.wrapper}>
         <div className={styles.loaderWrapper}>
-          <Spinner started={started} progress={progress} complete={complete} />
+          <Spinner 
+            started={started} 
+            progress={progress} 
+            complete={complete} 
+          />
         </div>
         <div className={styles.controlsWrapper}>
           <Button
