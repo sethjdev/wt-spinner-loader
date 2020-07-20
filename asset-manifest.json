@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/wt-spinner-loader/static/css/main.fe91a746.chunk.css",
-    "main.js": "/wt-spinner-loader/static/js/main.934da6bb.chunk.js",
-    "main.js.map": "/wt-spinner-loader/static/js/main.934da6bb.chunk.js.map",
+    "main.js": "/wt-spinner-loader/static/js/main.9f2a49e1.chunk.js",
+    "main.js.map": "/wt-spinner-loader/static/js/main.9f2a49e1.chunk.js.map",
     "runtime-main.js": "/wt-spinner-loader/static/js/runtime-main.b55328ac.js",
     "runtime-main.js.map": "/wt-spinner-loader/static/js/runtime-main.b55328ac.js.map",
     "static/js/2.e7605547.chunk.js": "/wt-spinner-loader/static/js/2.e7605547.chunk.js",
     "static/js/2.e7605547.chunk.js.map": "/wt-spinner-loader/static/js/2.e7605547.chunk.js.map",
     "index.html": "/wt-spinner-loader/index.html",
-    "precache-manifest.36dbb90639dd994551bbbd6df3695b4b.js": "/wt-spinner-loader/precache-manifest.36dbb90639dd994551bbbd6df3695b4b.js",
+    "precache-manifest.c58a9b9c2b381b51e9d6815d23f97be1.js": "/wt-spinner-loader/precache-manifest.c58a9b9c2b381b51e9d6815d23f97be1.js",
     "service-worker.js": "/wt-spinner-loader/service-worker.js",
     "static/css/main.fe91a746.chunk.css.map": "/wt-spinner-loader/static/css/main.fe91a746.chunk.css.map",
     "static/js/2.e7605547.chunk.js.LICENSE.txt": "/wt-spinner-loader/static/js/2.e7605547.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b55328ac.js",
     "static/js/2.e7605547.chunk.js",
     "static/css/main.fe91a746.chunk.css",
-    "static/js/main.934da6bb.chunk.js"
+    "static/js/main.9f2a49e1.chunk.js"
   ]
 }

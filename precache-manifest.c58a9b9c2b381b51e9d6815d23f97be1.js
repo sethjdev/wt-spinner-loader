@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f48928e5ead4582fbd2e6c574bb986d9",
+    "revision": "8fc89dc3ab46ec08e18a664fea6d3afe",
     "url": "/wt-spinner-loader/index.html"
   },
   {
-    "revision": "383d06c19c92f09c9008",
+    "revision": "647a19a49a8172886594",
     "url": "/wt-spinner-loader/static/css/main.fe91a746.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wt-spinner-loader/static/js/2.e7605547.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "383d06c19c92f09c9008",
-    "url": "/wt-spinner-loader/static/js/main.934da6bb.chunk.js"
+    "revision": "647a19a49a8172886594",
+    "url": "/wt-spinner-loader/static/js/main.9f2a49e1.chunk.js"
   },
   {
     "revision": "7c4ec66344e2118de988",
