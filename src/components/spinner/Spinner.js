@@ -8,7 +8,7 @@ function Spinner(props) {
   const circleWidth = 50;
 
   const strokeDasharray = Math.round(Math.PI * (2 * circleWidth) - 30);
-  let strokeDashoffset = Math.round(((100 - progress) / 100) * strokeDasharray);
+  const strokeDashoffset = Math.round(((100 - progress) / 100) * strokeDasharray);
 
   if (!!spinSvgRef.current) {
     if (started) {
